@@ -1,0 +1,142 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50%     { transform: translateY(-8px); }
+  }
+header {
+  position: fixed; top:0; width:100%;
+  z-index: 999;
+}
+footer {
+  position: static; bottom:0; width:100%;
+  background: #1e283b;
+  color:white;
+  padding:30px;
+  text-align: center;
+}
+nav {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    padding: 12px 20px;
+    color: white;
+}
+body {
+  padding-top:70px;
+}
+.nav-links {
+  display: flex; gap:20px; list-style: none;
+}
+.nav-links a {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#f0f02e;
+}
+.kotak {
+  width:200px;
+  padding:20px;
+  border: 2px solid steelblue;
+  margin: 40px 10px;
+  border-radius: 8px;
+  background-color: #e0f0ff;
+}
+.kotak1 {
+  width:200px;
+  padding:15px;
+  border: 2px solid crimson;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #ffe0e0;
+}
+img {
+  width: 40px;
+  height:40px;
+  border: 1px solid white;
+  border-radius:50%;
+}
+.card {
+  position: relative;
+  background: #f0f4ff;
+  padding:30px;
+  margin:10px;
+  border:1px solid #c0d0ff;
+  border-radius: 8px;
+  width:200px;
+  line-height: 1.8;
+}
+.badje {
+  position:absolute;
+  top:8px; right:8px;
+  background: crimson; color:white;
+  font-size:11px; padding:2px 8px;
+  border-radius:10px;
+}
+.tag {
+  display:inline-block;
+  background: #dbeafe; color: #1d4ed8;
+  padding: 2px 8px; border-radius: 4px;
+  font-size: 12px; margin: 2px;
+}
+.kards {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+.kard {
+  flex:1; max-width: 120px;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding:16px; border-radius:8px;
+  text-align: center;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(140px, 1fr)) ;
+  gap:1rem;
+  padding: 16px;
+}
+.kart {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: inset 0 2px 4px 1px rgba(0,0,0,0.05);
+}
+.ikon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.kart h3 {
+font-size: 14px; color: #1e293b;
+}
+.kart p {
+  font-size: 12px; color: #94a3b8; margin-top: 4px;
+}
+.karto {
+    background: white; border: 1px solid #e2e8f0;
+    padding: 20px; margin-left: 25%; border-radius: 10px;
+    width: 200px;
+    animation: fadeUp 0.6s ease forwards;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .ikonx { font-size: 2rem; animation: bounce 1.5s ease-in-out infinite; }
+  button {
+    background: #3b82f6; color: white; border: none;
+    padding: 10px 20px; border-radius: 6px; cursor: pointer;
+    transition: all 0.2s ease; margin-left: 35%; margin-top:4px;
+  }
+  button:hover { background: #1d4ed8; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(59,130,246,0.4); }
