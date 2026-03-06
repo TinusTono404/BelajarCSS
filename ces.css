@@ -1,0 +1,39 @@
+:root {
+    --biru: #3b82f6;
+    --gelap: #1e293b;
+    --abu: #94a3b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: sans-serif; background: #f8fafc; color: var(--gelap); }
+
+  header {
+    background: var(--gelap); color: white;
+    padding: 16px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .profile {
+    max-width: 600px; margin: 40px auto;
+    background: white; border-radius: 12px;
+    padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+  .avatar {
+    width: 80px; height: 80px; border-radius: 50%;
+    border: 3px solid var(--biru); margin: 0 auto 16px;
+  }
+  h1 { font-size: 1.5rem; margin-bottom: 8px; }
+  .bio { color: var(--abu); font-size: 14px; margin-bottom: 20px; }
+  .skills { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+  .skill {
+    background: #eff6ff; color: var(--biru);
+    padding: 4px 12px; border-radius: 20px; font-size: 13px;
+    transition: all 0.2s;
+  }
+  .skill:hover { background: var(--biru); color: white; }
+  a {
+    color:white;
+    text-decoration:none;
+  }
+  a:hover {
+    color:yellow;
+  }
