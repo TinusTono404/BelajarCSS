@@ -1,2 +1,2 @@
 # BelajarCSS
-Belajar CSS
+Belajar CSS bulan pertama
